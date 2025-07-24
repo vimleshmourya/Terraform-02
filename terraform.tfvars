@@ -1,6 +1,8 @@
+subscription_id = "48959946-2f7e-4d0f-8c80-ed7b8706e6c3"
+
 rg-map = {
   rg1 = {
-    name     = "vm-rg-01"
+    name     = "dev-vm-rg-01"
     location = "West Europe"
   }
   rg2 = {
@@ -164,7 +166,7 @@ data-disk-map = {
     location               = "West Europe"
     vm_resource_group_name = "vm-rg-01"
     storage_account_type   = "Standard_LRS"
-    disk_size_gb           = 128
+    disk_size_gb           = 10
   }
 }
 

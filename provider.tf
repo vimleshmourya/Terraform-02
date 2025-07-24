@@ -1,4 +1,11 @@
 terraform {
+    # backend "azurerm" {
+    # resource_group_name  = "Amit-rg"
+    # storage_account_name = "devenvrionment12"
+    # container_name       = "tfstate"
+    # key                  = "ranjeet.terraform.tfstate"
+    # key                  = "${terraform.workspace}.terraform.tfstate"
+  # }
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
@@ -9,5 +16,5 @@ terraform {
 
 provider "azurerm" {
   features {}
-  subscription_id = "16a05a8e-7ba4-486d-8521-57e717aedbbd"
+  subscription_id = var.subscription_id
 }
